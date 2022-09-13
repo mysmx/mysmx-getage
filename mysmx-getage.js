@@ -1,4 +1,4 @@
-function getAge(birthdate) {
+module.exports = function(birthdate) {
   let now = new Date(),
       age = now.getFullYear() - birthdate.getFullYear();
   if (now.getMonth() < birthdate.getMonth()) {
@@ -7,4 +7,4 @@ function getAge(birthdate) {
       age--;
   }
   return age;
-}
+};
